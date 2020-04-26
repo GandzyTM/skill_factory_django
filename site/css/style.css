@@ -1,0 +1,18 @@
+a {
+    font-weight: bolder;
+    background-color: red;
+}
+
+h2 {
+    font-weight: normal;
+    color: tomato;
+}
+
+q {
+    font-weight: bolder;
+}
+
+blockquote {
+    background-color: yellow;
+}
+
