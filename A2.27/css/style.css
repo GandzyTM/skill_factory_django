@@ -1,3 +1,30 @@
+header {
+    color: #000;
+}
+
+header a {
+    display: inline-block;
+    margin: 0 30px;
+    color: inherit;
+}
+
+.special {
+    position: relative;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: bottom;
+    min-width: 300px;
+    width: 33%;
+    min-height: 200px;
+    background-color: rgb(240, 152, 70);
+}
+
+.items-wrapper {
+    position: relative;
+}
+
 .about-heading {
     color: rgb(240, 17, 17);
 }
@@ -35,4 +62,36 @@ a:hover {
 
 .items tbody tr:nth-of-type(2n+1) {
     background-color: rgb(252, 198, 128);
+}
+
+.internet-text {
+    color: red;
+    font-weight: bold;
+}
+
+.text {
+    background-color: bisque;
+}
+
+.client-text {
+    font-weight: bold;
+    color: blue;
+}
+
+.internet-text {
+    text-transform: uppercase;
+}
+
+.browser-text {
+    font-style: italic;
+    color: orange;
+}
+
+.server-text {
+    color: red;
+}
+
+.box {
+    display: inline-block;
+    width: 320px;
 }
