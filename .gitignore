@@ -50,3 +50,6 @@
 # Module.symvers
 # Mkfile.old
 # dkms.conf
+/A3_13/
+/A4.14/
+/.idea/
