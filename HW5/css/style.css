@@ -1,16 +1,20 @@
-.h {
-    height: 40px;
-    background: #8affde;
+.heading-text {
+    margin: 50px 0;
+    text-transform: uppercase;
 }
-.a {
-    height: calc(100vh - 40px);
-    background: #ffac9d;
+
+.main-form {
+    margin-bottom: 30px;
 }
-.m {
-    height: calc(100% - 40px);
-    background: #eab1ff;
+
+.main-form input {
+    box-shadow: #007bff 2px 2px 7px 1px;
 }
-.f {
-    height: 40px;
-    background: #97bdff;
+
+.btn-wrapper {
+    justify-content: center;
+}
+
+.start-btn {
+    width: 15vw;
 }
