@@ -16,4 +16,8 @@ function init() {
 	console.log("Script added");
 }
 
+function btnClick() {
+	
+}
+
 $(document).ready(init);

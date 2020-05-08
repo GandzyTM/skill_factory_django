@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>HW6 Progressbar</title>
+	<style type="text/css">
+		#progress_line {
+			width: 100%;
+			background-color: grey;
+		}
+
+		#progress_line_view {
+			width: 1%;
+			height: 30px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/script-a6.js"></script>
+
+	<div>
+		<div class="progress" id="progress_line">
+			<div class="progress-bar progress-bar-striped bg-success" id="progress_line_view" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<button id="onePercent" type="button" class="btn btn-light">+1%</button>
+		<button id="threePercent" type="button" class="btn btn-light">+3%</button>
+		<button id="sevenPercent" type="button" class="btn btn-light">+7%</button>
+	</div>
+	<script>
+		function move() {
+			let currentProgress = 0;
+			$('#onePercent').click(function() {
+				currentProgress += 1;
+				$('#progress_line').attr("style", "width: " + currentProgress + "%");
+			});
+
+			$('#threePercent').click(function() {
+				currentProgress += 3;
+				$('#progress_line').attr("style", "width: " + currentProgress + "%");
+			});
+
+			$('#sevenPercent').click(function() {
+				currentProgress += 7;
+				$('#progress_line').attr("style", "width: " + currentProgress + "%");
+			});
+			console.log("script added to progress");
+		}
+		$(document).ready(move);
+	</script>
+
+
+</body>
+</html>
