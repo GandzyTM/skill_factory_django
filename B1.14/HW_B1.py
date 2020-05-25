@@ -16,10 +16,28 @@ flowers = {
     },
 }
 
-for key in flowers:
-    for key2 in flowers[key]:
-        avg = sum(flowers[key][key2]) / len(flowers[key][key2])
-        print(round(avg, 1))
+grouped_features = {}
+for iris in flowers:
+    for feature in flowers[iris]:
+        if feature in grouped_features:
+            grouped_features[feature] = grouped_features[feature] + flowers[iris][feature]
+        else:
+            grouped_features[feature] = flowers[iris][feature]
+for feature in grouped_features:
+    feature_mean = sum(grouped_features[feature]) / len(grouped_features[feature])
+    print("Mean of {f}: {s}".format(
+        f=feature,
+        s=round(feature_mean, 1)))
+
+# for key in flowers:
+#     for key2 in flowers[key]:
+#         if key2=="sepal_length":
+#             print()
+#         avg = sum(flowers[key][key2]) / len(flowers[key][key2])
+#         print(round(avg, 1))
+#     print(avg)
+# dict_answer = {"mean_sepal_length":[], "mean_sepal_width":[], "mean_petal_length":[]}
+# print(dict_answer)
 
 
 # выше были данные, а после этой строчки
